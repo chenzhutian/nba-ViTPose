@@ -41,7 +41,7 @@ if __name__ == '__main__':
                 'bbox': (float(x), float(y), float(w), float(h))
             }))
             
-    cap = cv2.VideoCapture(f'{img_folder}/../videos/{game_id}.mp4')
+    cap = cv2.VideoCapture(f'{img_folder}/../../videos/{game_id}.mp4')
     output_video = cv2.VideoWriter(
         filename=f'{save_folder}/{game_id}-keypoint-vis.mp4',
         fourcc=cv2.VideoWriter_fourcc(*'mp4v'),
